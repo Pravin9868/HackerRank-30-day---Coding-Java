@@ -1,0 +1,29 @@
+import java.lang.*;
+import java.util.*;
+
+class Solution
+{
+    public static void eveOdd(int s){
+     if(s%2!=0){
+         System.out.println("Weird");
+     }
+     else if(s%2==0 && s>=2 && s<=5 ){
+         System.out.println("Not Weird");
+     }   
+     else if(s%2==0 && s>=6 && s<=20){
+         System.out.println("Weird");
+     }
+     else if(s>20){
+         System.out.println("Not Weird");
+     }       
+    }    
+}
+public class Solve{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        Solution.eveOdd(n);
+    }
+}
+
+
